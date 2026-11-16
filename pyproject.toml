@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-browser-bridge"
+version = "0.14.0"
+description = "Chrome tab-group context and native messaging tools for AI agents"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp==2.3.0"]
+
+[project.scripts]
+ai-browser = "ai_browser.bridge:main"
+ai-browser-mcp = "ai_browser.mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_browser"]
