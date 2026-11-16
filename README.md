@@ -53,7 +53,7 @@ Choose AI Browser when you want a standalone tool for both clients. The official
 | Use complex controls | Use keyboard input and screenshot-based clicks when ordinary page elements are not enough |
 | Continue a task | Recover from temporary connection loss; reload the Python component without closing tabs |
 
-Embedded pages from a different origin are not accessible. Same-origin iframes and Shadow DOM elements are supported. Some websites may still need manual interaction.
+Reading and targeting elements inside a cross-origin iframe through the DOM is not supported, although its content may appear in a page screenshot. Same-origin iframes and Shadow DOM elements are supported. Some websites may still need manual interaction.
 
 ## Requirements
 
